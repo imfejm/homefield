@@ -17,6 +17,8 @@ body {
   align-items: center;
   margin: 0;
   max-width: 100%;
+  font-family: comfortaa;
+  font-weight: 400;
   /*overflow-x: hidden;*/
 }
 .line {
@@ -250,6 +252,7 @@ a.nav-link {
   z-index: 2;
   background-color: #eeeae4;
 }
+/*-*/
 
 .biotext {
   padding: 0 10% 0 10%;
@@ -258,3 +261,120 @@ a.nav-link {
 .mobox h2 {
   padding: 0 10% 0 10%;
 }
+.banner {
+  width: 80%;
+  height: 100px;
+  background-color: #249689;
+  justify-self: center;
+}
+
+/*kontaktni formular*/
+.contact {
+  grid-area: contact;
+  background-color: #070c12;
+}
+
+.facebook,
+.instagram {
+  width: 20%;
+  margin: 4% 15% 13% 13%;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eeeae4;
+  font-style: bold;
+}
+.forms p {
+  padding: 0 10% 5% 10%;
+}
+@media only screen and (min-width: 800px) {
+  .contact {
+    display: grid;
+    grid-template-areas: "form all";
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+  }
+  .all {
+    grid-area: all;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .forms {
+    grid-area: form;
+    margin: 5%;
+  }
+}
+
+.forms input,
+textarea {
+  width: 90%;
+  height: 2rem;
+  margin: 1%;
+  background-color: #eeeae4;
+}
+label {
+  padding: 1% 0 1% 0;
+}
+.forms button {
+  background-color: #c69b34;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin: 1%;
+  margin-bottom: 5%;
+  color: white;
+}
+.all {
+  background-color: #eeeae4;
+  color: #070c12;
+  margin: 0 5% 0 5%;
+  border: solid 10px #243C5A;
+}
+.all p {
+  padding: 10% 10% 0 10%;
+  font-size: 1.2rem;
+}
+.footer {
+  padding: 10% 10% 0 10% 0;
+  text-align: center;
+}
+.footer p {
+  background-color: #070c12;
+  color: #eeeae4;
+  margin: 0;
+  padding: 5%;
+}
+@media only screen and (min-width: 800px) {
+  .footer p {
+    padding: 2% 5% 0 5%;
+  }
+}
+
+/*@media (prefers-color-scheme: dark) and (max-width: 800px) {
+  body {
+    background-color: #070c12;
+    color: #eeeae4;
+  }
+  .logobox {
+    background-color: #243c5a97;
+  }
+  .content-wrapper {
+    background-color: #070c12;
+    color: #eeeae4;
+  }
+  .contact {
+    background-color: #243c5a97;
+    color: #eeeae4;
+  }
+
+  .forms input,
+  textarea {
+    background-color: #eeeae4;
+  }
+}
+*/

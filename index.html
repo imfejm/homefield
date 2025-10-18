@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Comfortaa:wght@300..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grechen+Fuemen&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pavanam&family=Quando&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>HOMEFIELD</title>
   </head>
@@ -59,19 +65,61 @@
       <div class="stop" id="maloobchod"></div>
       <div class="mobox">
         <h2>maloobchodní nabídku navštivte zde:</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          autem repellat perferendis rem alias tempore quod repellendus totam
-          nesciunt at, mollitia ullam dolorum sapiente, quam porro quibusdam.
-          Voluptatibus temporibus quia quas officia, vero voluptates tenetur
-          magnam vitae a beatae fugit porro. Saepe eum odit culpa tenetur
-          sapiente. Maiores temporibus similique quis amet minima aliquid vero
-          eum cupiditate reprehenderit, itaque architecto voluptatem reiciendis
-          aut quidem animi omnis laudantium iure harum enim maxime magnam ut
-          odio? Quam harum voluptatibus labore. Iste, dignissimos. Excepturi
-          repudiandae dicta, rerum labore nesciunt aut obcaecati sapiente. Iure
-          voluptatem in eum dignissimos vitae alias illum. Facilis, quaerat cum.
-        </p>
+        <div class="banner"></div>
+      </div>
+      <div class="stop" id="kontakt"></div>
+      <div class="contact">
+        <form class="forms" id="contact-form">
+          <p>V případě jakýchkoliv dotazů nás neváhejte kontaktovat:</p>
+          <label for="message" data-key="message">zpráva:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <label for="name" data-key="name">vaše jméno:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email" data-key="email"
+            >váš e-mail, kam mohu odepsat:</label
+          >
+          <input type="email" id="email" name="reply_to" required />
+
+          <!-- Honeypot input (skrytý, roboti ho vyplní) -->
+          <input
+            type="text"
+            id="honeypot"
+            name="honeypot"
+            style="display: none"
+          />
+
+          <!-- Google reCAPTCHA 
+          <div class="g-recaptcha" data-sitekey="6LflQfUqAAAAAHuzyq7V4_oIHP8KkLWQZyZRMY_o"></div>
+          -->
+          <button type="submit" data-key="send">odeslat</button>
+        </form>
+        <div class="all">
+          <p data-key="follow">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <div class="soc">
+            <a
+              href="https://www.facebook.com/keramika.od.luka"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/facebook (1).png" alt="facebook" class="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/luk_bonsai?igsh=eXBzOThjNTZ2Y3Nu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/instagram.png" alt="instagram" class="instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>© 2025 Homefield s r.o. Všechna práva vyhrazena.</p>
+        <p>vytvořeno www.imfejm.cz</p>
       </div>
     </div>
     <script src="index.js"></script>
