@@ -22,3 +22,48 @@ odkazy.forEach((link) => {
     document.querySelector("#cara3").classList.remove("caraC");
   });
 });
+
+//logo do horní lišty
+const logoS = document.querySelector(".logoS");
+function onScroll() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const logoS = document.querySelector(".logoS");
+
+  if (window.innerWidth <= 800) {
+    if (scrollTop > 50) {
+      logoS?.classList.add("visible");
+    } else {
+      logoS?.classList.remove("visible");
+    }
+  } else {
+    // Na velkých obrazovkách (nad 800px) je logoS skryté
+    //
+    logoS?.classList.remove("visible");
+  }
+}
+
+window.addEventListener("scroll", onScroll);
+window.addEventListener("resize", onScroll);
+onScroll();
+
+//logobox mizení při scrollu
+function onScroll() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const logobox = document.querySelector('.logobox');
+  
+  // Postupné mizení mezi 50-250px scrollu
+  const fadeStart = 50;
+  const fadeEnd = 500;
+  
+  if (scrollTop <= fadeStart) {
+    logobox.style.opacity = '1';
+  } else if (scrollTop >= fadeEnd) {
+    logobox.style.opacity = '0';
+  } else {
+    const opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+    logobox.style.opacity = opacity.toString();
+  }
+}
+
+window.addEventListener("scroll", onScroll);
+onScroll();

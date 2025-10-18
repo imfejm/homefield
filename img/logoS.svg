@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="1440"
-   height="1440"
-   viewBox="0 0 1439.9999 1439.9999"
+   width="1082.5009"
+   height="150.67334"
+   viewBox="0 0 1082.5008 150.67334"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -78,7 +78,7 @@
   </defs>
   <g
      id="layer-MC0"
-     transform="translate(-178.74973,-644.66333)">
+     transform="translate(-178.74974,-644.66331)">
     <path
        id="path1"
        d="M 0,0 H -15.296 V -112.704 H 0 v 53.249 h 25.028 v 15.296 H 0 Z"
