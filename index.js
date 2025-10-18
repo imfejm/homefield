@@ -25,7 +25,8 @@ odkazy.forEach((link) => {
 
 //logo do horní lišty
 const logoS = document.querySelector(".logoS");
-function onScroll() {
+
+function onScrollLogoS() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const logoS = document.querySelector(".logoS");
 
@@ -37,23 +38,22 @@ function onScroll() {
     }
   } else {
     // Na velkých obrazovkách (nad 800px) je logoS skryté
-    //
     logoS?.classList.remove("visible");
   }
 }
 
-window.addEventListener("scroll", onScroll);
-window.addEventListener("resize", onScroll);
-onScroll();
+window.addEventListener("scroll", onScrollLogoS);
+window.addEventListener("resize", onScrollLogoS);
+onScrollLogoS();
 
 //logobox mizení při scrollu
-function onScroll() {
+function onScrollLogobox() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const logobox = document.querySelector('.logobox');
   
-  // Postupné mizení mezi 50-250px scrollu
+  // Postupné mizení mezi 50-500px scrollu
   const fadeStart = 50;
-  const fadeEnd = 500;
+  const fadeEnd = 300;
   
   if (scrollTop <= fadeStart) {
     logobox.style.opacity = '1';
@@ -65,5 +65,5 @@ function onScroll() {
   }
 }
 
-window.addEventListener("scroll", onScroll);
-onScroll();
+window.addEventListener("scroll", onScrollLogobox);
+onScrollLogobox();
