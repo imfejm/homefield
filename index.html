@@ -51,7 +51,7 @@
     <div class="stop" id="bio"></div>
     <div class="content-wrapper">
       <div class="biotext">
-        <h2>Jsme Homefield s r.o.</h2>
+        <h2>Jsme Homefield s. r. o.</h2>
         <p>Česká firma. Šijeme v Praze.</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic
@@ -74,13 +74,20 @@
           <label for="message" data-key="message">zpráva:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <label for="name" data-key="name">vaše jméno:</label>
+          <label for="name" data-key="name">Vaše jméno:</label>
           <input type="text" id="name" name="name" required />
 
-          <label for="email" data-key="email"
-            >váš e-mail, kam mohu odepsat:</label
-          >
+          <label for="email" data-key="email">Váš e-mail:</label>
           <input type="email" id="email" name="reply_to" required />
+
+          <label for="phoneNumber">Vaše telefonní číslo:</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            pattern="[+0-9]{9,15}"
+            required
+          />
 
           <!-- Honeypot input (skrytý, roboti ho vyplní) -->
           <input
@@ -97,24 +104,49 @@
         </form>
         <div class="all">
           <p data-key="follow">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Najdete nás na dalších kontaktech a sociálních sítích:
           </p>
+          <a href="tel:+420730605875">
+            <img
+              src="img/phone.png"
+              alt="Telefon"
+              class="phone-icon"
+              width="35px"
+            />
+            +420 730 605 875
+          </a>
+          <div class="mail">
+            <img
+              src="img/email.png"
+              alt="E-mail info homefield.cz"
+              class="mail-icon"
+              width="35px"
+            />
+            <p>e-mail: info@homefield.cz</p>
+          </div>
           <div class="soc">
-            <a
-              href="https://www.facebook.com/keramika.od.luka"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="img/facebook (1).png" alt="facebook" class="facebook"
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/facebook.png"
+                alt="facebook"
+                class="facebook-icon"
+                width="35px"
             /></a>
-            <a
-              href="https://www.instagram.com/luk_bonsai?igsh=eXBzOThjNTZ2Y3Nu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="img/instagram.png" alt="instagram" class="instagram" />
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/instagram.png"
+                alt="instagram"
+                class="instagram-icon"
+                width="35px"
+              />
             </a>
           </div>
+          <div class="address">
+            <p>Homefield s. r. o.</p>
+            <p>Choceradská 3046/12</p>
+            <p>141 00 Praha 4</p>
+            <p>IČ: 22306455</p>
+            <p>datová schránka: 8kzvuxv</p>
         </div>
       </div>
       <div class="footer">
