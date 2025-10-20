@@ -71,7 +71,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 2.5vw;
-  font-family: "quicksand";
+  font-family: "quicksand", serif;
   font-weight: 300;
   border-left: solid 1px #c69b34;
   padding-left: 0.3em;
@@ -260,23 +260,50 @@ a.nav-link {
 }
 .biotext h2 {
   font-size: 25px;
-   color: #243c5a;
+  color: #243c5a;
   font-weight: 500;
-  text-decoration:overline 1px #c69b34}
-   
+  text-decoration: overline 1px #c69b34;
+}
+
 .mobox h2 {
   padding: 0 10% 0 10%;
   font-size: 22px;
-   font-family: comfortaa;
-   font-weight: 300;
-   color: #243c5a;
+  font-family: comfortaa;
+  font-weight: 300;
+  color: #243c5a;
 }
 
 .banner {
   width: 80%;
-  height: 100px;
-  background-color: #249689;
   justify-self: center;
+}
+/*.ksilt-img {
+  width: auto;
+  height: auto;
+  display: block;
+  position: relative;
+  left: 79%;
+  top: 230px;
+  z-index: 3;
+  transform: scaleX(-1) rotate(-32deg);
+  margin: 0;
+  padding: 0;
+}*/
+.banner-link {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.banner-link:hover {
+  opacity: 0.95;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0 0 0 10px ; /* volitelné zaoblení */
 }
 
 /*kontaktni formular*/
@@ -332,12 +359,13 @@ label {
 }
 .forms button {
   background-color: #c69b34;
-  width: 4rem;
+  width: 20%;
   height: 3rem;
   border-radius: 2px 2px 2px 10px;
   margin: 2rem;
   margin-bottom: 3rem;
   color: white;
+  font-size: 17px;
 }
 .forms button:hover {
   opacity: 0.4;
@@ -350,6 +378,7 @@ label {
   padding: 20px;
   background-color: #eeeae4;
   border: 10px solid #243c5a;
+  border-radius: 0 0 0 10px;
   box-shadow: 0 0 10px #243c5a;
   color: #243c5a;
   align-items: flex-start;
@@ -424,6 +453,7 @@ label {
   color: #eeeae4;
   margin: 0;
   padding: 5%;
+  text-align: center;
 }
 @media only screen and (min-width: 800px) {
   .footer p {
