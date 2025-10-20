@@ -260,12 +260,18 @@ a.nav-link {
 }
 .biotext h2 {
   font-size: 25px;
-}
-
+   color: #243c5a;
+  font-weight: 500;
+  text-decoration:overline 1px #c69b34}
+   
 .mobox h2 {
   padding: 0 10% 0 10%;
-  font-size: 25px;
+  font-size: 22px;
+   font-family: comfortaa;
+   font-weight: 300;
+   color: #243c5a;
 }
+
 .banner {
   width: 80%;
   height: 100px;
