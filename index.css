@@ -461,7 +461,7 @@ label {
   }
 }
 
-/*@media (prefers-color-scheme: dark) and (max-width: 800px) {
+@media (prefers-color-scheme: dark) and (max-width: 800px) {
   body {
     background-color: #070c12;
     color: #eeeae4;
@@ -473,6 +473,12 @@ label {
     background-color: #070c12;
     color: #eeeae4;
   }
+  .biotext h2 {
+    color: #c69b34;
+  }
+  .mobox h2{
+    font-weight: 500;
+  }
   .contact {
     background-color: #243c5a97;
     color: #eeeae4;
@@ -482,5 +488,14 @@ label {
   textarea {
     background-color: #eeeae4;
   }
+  .all {
+    background-color: #070c12;
+    border-color: #eeeae4;
+    box-shadow: 0 0 5px #eeeae4;
+    color: #eeeae4;
+  }
+  .all a[href^="tel"] {
+    color: #eeeae4;
+  }
 }
-*/
+
