@@ -32,7 +32,7 @@ body {
   left: 0;
   right: 0;
   background-color: #070c12;
-  height: 60px;
+  height: 45px;
 }
 .visually-hidden {
   position: absolute;
@@ -47,24 +47,24 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .menu {
+  /*.menu {
     max-width: fit-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-right: 2%;
-  }
+  }*/
 }
 @media only screen and (min-width: 500px) {
   .line {
-    height: 60px;
+    height: 45px;
   }
-  .title {
-    font-size: 3rem;
-  }
+  
 }
 
-.menu {
-  padding: 1%;
-  align-self: stretch;
+.menu {  
+ /* max-width: fit-content;*/  
+  position:absolute;
+  right:18px; 
+  top: 5px;
 }
 
 .menu a {
@@ -96,9 +96,9 @@ a.kontakt {
   /*hamburger a krizek*/
   position: absolute;
   right: 15px; /* Pevná vzdálenost od pravého okraje */
-  top: 15px; /* Vertikálně vycentrovaný */
+  top: 7px; /* Vertikálně vycentrovaný */
 
-  width: 25px; /* Pevná šířka místo 3vw */
+  width: 30px; /* Pevná šířka místo 3vw */
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
@@ -149,12 +149,17 @@ a.kontakt {
 /*logo small v navigaci*/
 
 .logoS {
-  width: 50%;
-  height: auto;
-  margin-left: -20%;
+  width:auto;
+  height: 30px;
+  padding:5px;
+  box-sizing: border-box; /* padding se počítá dovnitř */
+  position: absolute;
+  left: 32px; /* stejná vzdálenost jako má .ham od pravého okraje */
+  top: 7.5px; /* vycentrované vertikálně */ 
+  
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
 
 .logoS.visible {
@@ -215,7 +220,7 @@ a.nav-link {
 }
 
 .stop {
-  height: 60px;
+  height: 45px;
 }
 
 .logobox {
@@ -303,7 +308,7 @@ a.nav-link {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0 0 0 10px ; /* volitelné zaoblení */
+  border-radius: 0 0 0 10px; /* volitelné zaoblení */
 }
 
 /*kontaktni formular*/
@@ -476,7 +481,7 @@ label {
   .biotext h2 {
     color: #c69b34;
   }
-  .mobox h2{
+  .mobox h2 {
     font-weight: 500;
   }
   .contact {
@@ -498,4 +503,3 @@ label {
     color: #eeeae4;
   }
 }
-
