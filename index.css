@@ -266,7 +266,7 @@ a.nav-link {
 
 .eko {
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/ksilt.jpg");
@@ -285,7 +285,7 @@ a.nav-link {
 
 .styl {
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/styleksilt.jpg");
   background-size: cover;
