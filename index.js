@@ -52,18 +52,18 @@ function onScrollLogobox() {
   const logobox = document.querySelector('.logobox');
   
   // Postupné mizení mezi 50-500px scrollu
-  const fadeStart = 50;
-  const fadeEnd = 300;
+  //const fadeStart = 50;
+  //const fadeEnd = 300;
   
-  if (scrollTop <= fadeStart) {
-    logobox.style.opacity = '1';
-  } else if (scrollTop >= fadeEnd) {
-    logobox.style.opacity = '0';
-  } else {
-    const opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
-    logobox.style.opacity = opacity.toString();
-  }
-}
+ // if (scrollTop <= fadeStart) {
+//    logobox.style.opacity = '1';
+//  } else if (scrollTop >= fadeEnd) {
+//    logobox.style.opacity = '0';
+//  } else {
+ //   const opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+ //   logobox.style.opacity = opacity.toString();
+ // }
+//}
 
 window.addEventListener("scroll", onScrollLogobox);
-onScrollLogobox();
+onScrollLogobox();}

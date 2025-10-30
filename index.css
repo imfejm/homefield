@@ -57,13 +57,12 @@ body {
   .line {
     height: 45px;
   }
-  
 }
 
-.menu {  
- /* max-width: fit-content;*/  
-  position:absolute;
-  right:18px; 
+.menu {
+  /* max-width: fit-content;*/
+  position: absolute;
+  right: 18px;
   top: 5px;
 }
 
@@ -149,17 +148,17 @@ a.kontakt {
 /*logo small v navigaci*/
 
 .logoS {
-  width:auto;
+  width: auto;
   height: 30px;
-  padding:5px;
+  padding: 5px;
   box-sizing: border-box; /* padding se počítá dovnitř */
   position: absolute;
   left: 32px; /* stejná vzdálenost jako má .ham od pravého okraje */
-  top: 7.5px; /* vycentrované vertikálně */ 
-  
+  top: 7.5px; /* vycentrované vertikálně */
+
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .logoS.visible {
@@ -225,12 +224,16 @@ a.nav-link {
 
 .logobox {
   width: 100vw;
-  height: 300px;
+  height: 60vh;
   background-color: #070c12;
   display: flex;
   position: sticky;
   top: 0;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logobox:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 800px) {
@@ -244,6 +247,7 @@ a.nav-link {
   padding: 0 7% 0 7%;
   opacity: 0;
   animation: fadeIn 4s ease-in-out forwards;
+  align-self: center;
 }
 
 @keyframes fadeIn {
@@ -255,12 +259,97 @@ a.nav-link {
 /*překrytí logoboxu obsahem:*/
 .content-wrapper {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   background-color: #eeeae4;
 }
 /*-*/
 
-.biotext {
+.eko {
+  width: 100vw;
+  height: 40vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/ksilt.jpg");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.eko:hover {
+  transform: scale(1.1);
+}
+
+.styl {
+  width: 100vw;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/styleksilt.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.styl:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 800px) {
+  .eko,
+  .styl {
+    height: 70vh;
+  }
+}
+
+.shops {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.vobox {
+  background-color: #243c5a;
+  width: 100vw;
+  height: 40vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vobox:hover {
+  transform: scale(1.1);
+}
+
+.mobox {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mobox:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 800px) {
+  .shops {
+    display: flex;
+    flex-direction: row;
+  }
+  .vobox,
+  .mobox {
+    height: 70vh;
+    width: 50vw;
+  }
+}
+
+/*.biotext {
   padding: 0 10% 0 10%;
 }
 .biotext h2 {
@@ -268,17 +357,17 @@ a.nav-link {
   color: #243c5a;
   font-weight: 500;
   text-decoration: overline 1px #c69b34;
-}
+}*/
 
-.mobox h2 {
+/*.mobox h2 {
   padding: 0 10% 0 10%;
   font-size: 22px;
   font-family: comfortaa;
   font-weight: 300;
   color: #243c5a;
-}
+}*/
 
-.banner {
+/*.banner {
   width: 80%;
   justify-self: center;
 }
@@ -315,6 +404,9 @@ a.nav-link {
 .contact {
   grid-area: contact;
   background-color: #070c12;
+  position: sticky;
+  top: 0;
+  z-index: 4;
 }
 
 .facebook,
@@ -481,11 +573,11 @@ label {
   .biotext h2 {
     color: #c69b34;
   }
-  .mobox h2 {
+  /*.mobox h2 {
     font-weight: 500;
-  }
+  }*/
   .contact {
-    background-color: #243c5a97;
+    background-color: #243c5a;
     color: #eeeae4;
   }
 
