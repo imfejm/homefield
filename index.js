@@ -14,9 +14,8 @@ tlacitko.addEventListener("click", () => {
 // Zavření menu po kliknutí na jakýkoli odkaz
 odkazy.forEach((link) => {
   link.addEventListener("click", () => {
-    rozbal.classList.add("hidden"); // Skryje menu
+    rozbal.classList.add("hidden");
 
-    // Vrátí čáry do původní polohy (křížek zpět na hamburger)
     document.querySelector("#cara1").classList.remove("caraA");
     document.querySelector("#cara2").classList.remove("caraB");
     document.querySelector("#cara3").classList.remove("caraC");
@@ -24,8 +23,6 @@ odkazy.forEach((link) => {
 });
 
 //logo do horní lišty
-const logoS = document.querySelector(".logoS");
-
 function onScrollLogoS() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const logoS = document.querySelector(".logoS");
@@ -37,7 +34,6 @@ function onScrollLogoS() {
       logoS?.classList.remove("visible");
     }
   } else {
-    // Na velkých obrazovkách (nad 800px) je logoS skryté
     logoS?.classList.remove("visible");
   }
 }
@@ -49,21 +45,40 @@ onScrollLogoS();
 //logobox mizení při scrollu
 function onScrollLogobox() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  const logobox = document.querySelector('.logobox');
-  
+  const logobox = document.querySelector(".logobox");
+
   // Postupné mizení mezi 50-500px scrollu
   //const fadeStart = 50;
   //const fadeEnd = 300;
-  
- // if (scrollTop <= fadeStart) {
-//    logobox.style.opacity = '1';
-//  } else if (scrollTop >= fadeEnd) {
-//    logobox.style.opacity = '0';
-//  } else {
- //   const opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
- //   logobox.style.opacity = opacity.toString();
- // }
-//}
+
+  // if (scrollTop <= fadeStart) {
+  //    logobox.style.opacity = '1';
+  //  } else if (scrollTop >= fadeEnd) {
+  //    logobox.style.opacity = '0';
+  //  } else {
+  //   const opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+  //   logobox.style.opacity = opacity.toString();
+  // }
+  //}
+
+
+}
+
 
 window.addEventListener("scroll", onScrollLogobox);
-onScrollLogobox();}
+onScrollLogobox();
+
+//animace pri scrollu - MUSÍ BÝT AŽ PO NAČTENÍ DOM
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.7 });
+
+  document.querySelectorAll('.logobox, .eko, .styl, .shops').forEach(el => {
+    observer.observe(el);
+  });
+});
