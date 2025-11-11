@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Comfortaa:wght@300..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grechen+Fuemen&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pavanam&family=Quando&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Comfortaa:wght@300..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Forum&family=Grechen+Fuemen&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pavanam&family=Quando&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>HOMEFIELD</title>
   </head>
@@ -21,6 +27,7 @@
       <div class="menu">
         <a href="#bio" class="bio">bio</a>
         <a href="#kontakt" class="kontakt">kontakt</a>
+        <a href="velko.html" class="velkoobchod">velkoobchod</a>
         <a href="#maloobchod" class="maloobchod">maloobchod</a>
       </div>
 
@@ -40,48 +47,80 @@
           <a class="nav-link" href="#kontakt">kontakt</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="velko.html">velkoobchod</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#maloobchod">maloobchod</a>
         </li>
       </ul>
     </div>
-    <div class="stop"></div>
-    <div class="logobox">
-      <img src="img/hfwhite.svg" alt="Homefield Logo" class="logo" />
+    <div class="stop" id="bio"></div>
+    <div class="upperlogobox">
+      <div class="logobox">
+        <div class="front">
+          <img src="img/hfwhite.svg" alt="Homefield Logo" class="logo" />
+          <div class="odkaz">
+            <p>více o nás</p>
+            <img src="img/sipka.svg" alt="homefield info sipka" class="sipka" />
+          </div>
+        </div>
+        <div class="back">
+          <p>Text o naší firmě a historii...</p>
+        </div>
+      </div>
     </div>
-    <!--<div class="stop" id="bio"></div>-->
+
     <div class="content-wrapper">
       <div class="stop"></div>
-      <div class="eko">     
+      <div class="eko-wrapper">
+        <div class="eko">
+          <div class="front">
+            <h2>udržitelnost</h2>
+            <img
+              src="img/sipka.svg"
+              alt="udržitelnost homefield výrobků"
+              class="šipka"
+            />
+          </div>
 
+          <div class="back">
+            <p>Informace o udržitelnosti našich produktů...</p>
+          </div>
+        </div>
       </div>
       <div class="stop"></div>
-      <div class="styl"></div>
-      <!--<div class="biotext">
-        <h2>Jsme Homefield s. r. o.</h2>
-        <p>Česká firma. Šijeme v Praze.</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic
-          at, cupiditate dicta laboriosam dolorum eligendi aut mollitia culpa
-          sunt cumque atque autem eum. Reiciendis commodi iusto reprehenderit
-          magnam ratione ducimus. Repellendus dolor numquam et voluptatibus
-          dolores nihil est iste fuga dolore eaque cupiditate ipsam
-          reprehenderit, reiciendis, in laborum eveniet.
-        </p>
-      </div>-->
+      <div class="styl-wrapper">
+        <div class="styl">
+          <div class="front">
+            <h2>styl</h2>
+            <img
+              src="img/sipka.svg"
+              alt="styl homefield výrobků"
+              class="šipka"
+            />
+          </div>
+          <div class="back">
+            <p>Popis našeho stylu a designu...</p>
+          </div>
+        </div>
+      </div>
+
       <div class="stop" id="maloobchod"></div>
       <div class="shops">
-        <div class="vobox">
-          <h2>velkoobchod</h2>
-        </div>
+        <a href="velko.html" class="vobox-link">
+          <div class="vobox">
+            <h2>velkoobchod</h2>
+          </div>
+        </a>
         <div class="mobox">
           <h2>maloobchod</h2>
           <div class="banner">
             <!--<img src="img/ksiltovka-desktop.png" alt="ksiltovka signature" class="ksilt-img" />-->
-           <a href="tvuj-odkaz.html" class="banner-link">        
-            </a>
+            <a href="tvuj-odkaz.html" class="banner-link"> </a>
           </div>
         </div>
-      </div>         
+      </div>
+
       <div class="stop" id="kontakt"></div>
       <div class="contact">
         <form class="forms" id="contact-form">
@@ -162,13 +201,15 @@
             <p>141 00 Praha 4</p>
             <p>IČ: 22306455</p>
             <p>datová schránka: 8kzvuxv</p>
+          </div>
         </div>
       </div>
-      <div class="footer">
-        <p>© 2025 Homefield s r.o. Všechna práva vyhrazena.</p>
-        <p>vytvořeno www.imfejm.cz</p>
-      </div>
     </div>
+    <div class="footer">
+      <p>© 2025 Homefield s r.o. Všechna práva vyhrazena.</p>
+      <p>vytvořeno www.imfejm.cz</p>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

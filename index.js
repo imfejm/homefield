@@ -27,12 +27,8 @@ function onScrollLogoS() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const logoS = document.querySelector(".logoS");
 
-  if (window.innerWidth <= 800) {
-    if (scrollTop > 50) {
-      logoS?.classList.add("visible");
-    } else {
-      logoS?.classList.remove("visible");
-    }
+  if (scrollTop > 50) {
+    logoS?.classList.add("visible");
   } else {
     logoS?.classList.remove("visible");
   }
@@ -81,4 +77,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.logobox, .eko, .styl, .shops').forEach(el => {
     observer.observe(el);
   });
+});
+
+// Posunutí při kliknutí
+document.querySelector('.logobox').addEventListener('click', function() {
+  this.classList.toggle('slided');
+});
+
+document.querySelector('.eko').addEventListener('click', function() {
+  this.classList.toggle('slided');
+});
+
+document.querySelector('.styl').addEventListener('click', function() {
+  this.classList.toggle('slided');
 });

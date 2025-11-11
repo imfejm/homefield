@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Comfortaa:wght@300..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grechen+Fuemen&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pavanam&family=Quando&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="velko.css" />
+    <title>HOMEFIELD</title>
+  </head>
+  <body>
+    <div class="line">
+      <h1>
+        <span class="visually-hidden">Homefield</span>
+      </h1>
+      <img src="img/logoS.svg" alt="logo Homefield small" class="logoS" />
+      <div class="menu">
+        <a href="index.html#bio" class="bio">bio</a>
+        <a href="index.html#kontakt" class="kontakt">kontakt</a>
+        <a href="index.html#maloobchod" class="maloobchod">maloobchod</a>
+      </div>
+
+      <div class="ham" id="ham">
+        <div class="cara1" id="cara1"></div>
+        <div class="cara2" id="cara2"></div>
+        <div class="cara3" id="cara3"></div>
+      </div>
+    </div>
+
+    <div class="navigace small hidden" id="menu">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#bio">bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#kontakt">kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#maloobchod">maloobchod</a>
+        </li>
+      </ul>
+    </div>
+    <div class="stop"></div>
+    <h2 class="velkohead">Velkoobchodní nabídka</h2>
+    <div class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, expedita
+      voluptas, corporis incidunt tempore doloremque sed veniam suscipit
+      assumenda labore aliquid amet libero eum. Temporibus iste, aperiam dolorum
+      ullam nulla consectetur nam aut distinctio molestias illo molestiae animi!
+      Necessitatibus mollitia pariatur culpa tempora vel velit distinctio
+      adipisci accusantium, error dolore magnam ratione tempore officiis
+      voluptate maxime dicta non, expedita cum earum id fugit corrupti ipsam!
+      Quos laudantium ab eligendi ipsum officiis esse ipsam facere numquam,
+      libero explicabo blanditiis sed! Iusto fuga odit fugit tenetur provident
+      corrupti tempora incidunt vitae quas. Quaerat molestiae, at explicabo
+      saepe aperiam vitae itaque iusto illo?
+    </div>
+    <div class="objednavka">
+      <form class="forms" id="contact-form">
+        <p>Pro objednání vyplňte:</p>
+        <label for="message" data-key="message">zpráva:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="name" data-key="name">Vaše jméno:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email" data-key="email">Váš e-mail:</label>
+        <input type="email" id="email" name="reply_to" required />
+
+        <label for="phoneNumber">Vaše telefonní číslo:</label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          name="phoneNumber"
+          pattern="[+0-9]{9,15}"
+          required
+        />
+
+        <!-- Honeypot input (skrytý, roboti ho vyplní) -->
+        <input
+          type="text"
+          id="honeypot"
+          name="honeypot"
+          style="display: none"
+        />
+
+        <!-- Google reCAPTCHA 
+          <div class="g-recaptcha" data-sitekey="6LflQfUqAAAAAHuzyq7V4_oIHP8KkLWQZyZRMY_o"></div>
+          -->
+        <button type="submit" data-key="send">odeslat</button>
+      </form>
+    </div>
+    <script src="velko.js"></script>
+  </body>
+</html>

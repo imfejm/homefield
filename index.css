@@ -69,7 +69,7 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: "quicksand", serif;
   font-weight: 300;
   border-left: solid 1px #c69b34;
@@ -81,7 +81,8 @@ body {
 @media only screen and (max-width: 800px) {
   .bio,
   .kontakt,
-  .maloobchod {
+  .maloobchod,
+  .velkoobchod {
     display: none;
   }
 }
@@ -220,31 +221,91 @@ a.nav-link {
 
 .stop {
   height: 45px;
+  position: relative;
+  z-index: 0;
 }
-
-.logobox {
-  width: 100%;
-  height: 60vh;
-  background-color: #070c12;
-  display: flex;
+.upperlogobox {
   position: sticky;
   top: 0;
   z-index: 1;
+  height: 50vh;
 }
 
-@media only screen and (min-width: 800px) {
-  .logobox {
-    height: 500px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .logobox:hover {
-    transform: scale(1.1);
-  }
+.logobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50vh;
+  background-color: #070c12;
 }
-.logo {
+
+.logobox,
+.eko,
+.styl {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.logobox:hover,
+.eko:hover,
+.styl:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.logobox .front,
+.logobox .back,
+.eko .front,
+.eko .back,
+.styl .front,
+.styl .back {
+  position: absolute;
   width: 100%;
-  height: 80%;
-  padding: 0 7% 0 7%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.6s ease;
+}
+
+.logobox .front,
+.eko .front,
+.styl .front {
+  left: 0;
+  transform: translateX(0);
+  justify-content: space-between;
+}
+
+.logobox.slided .front,
+.eko.slided .front,
+.styl.slided .front {
+  transform: translateX(-100%);
+}
+
+.logobox .back,
+.eko .back,
+.styl .back {
+  transform: translateX(100%);
+  background-color: #070c12;
+  align-items: center;
+  justify-content: center;
+  padding: 7%;
+  color: #eeeae4;
+}
+
+.logobox.slided .back,
+.eko.slided .back,
+.styl.slided .back {
+  transform: translateX(0);
+}
+
+.logo {
+  width: 100vw;
+  height: 50%;
+  padding: 7% 7% 3% 7%;
   opacity: 0;
   animation: fadeIn 4s ease-in-out forwards;
   align-self: center;
@@ -256,8 +317,51 @@ a.nav-link {
   }
 }
 
+
+
+.odkaz {
+  display: flex;
+  flex-direction: row;
+  color: #c69b34;
+  text-align: right;
+  padding: 0 7% 0 7%;
+  justify-content: right;
+}
+
+.sipka {
+  width: 80px;
+}
+
+@media only screen and (min-width: 800px) {
+ .logobox {
+    height: 70vh; /* nebo 80vh, 100vh podle potřeby */
+      }
+  
+  .upperlogobox {
+    z-index: 2; /* Zvýšit z-index, aby se nepřekrývalo */
+  }
+
+  .logobox .front {
+    padding-bottom: 5%; /* Přidej padding, aby .odkaz nebyl úplně dole */
+  }
+.logo{
+    width: auto;
+    height:60%;  /* Nebo jinou výšku */
+    max-width: 80%;
+    padding: 5% 7% 3% 7%;    
+  }
+
+  .sipka {
+    width: 150px;
+  }
+  .odkaz p {
+    font-size: 2vw;
+  }
+}
+
 /*překrytí logoboxu obsahem:*/
 .content-wrapper {
+  width: 100%;
   position: relative;
   z-index: 3;
   background-color: #eeeae4;
@@ -265,34 +369,67 @@ a.nav-link {
 /*-*/
 
 .eko {
-  width: 100%;
-  height: 50vh;
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/ksilt.jpg");
-
   background-size: cover;
   background-position: center;
-  display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .styl {
-  width: 100%;
-  height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/styleksilt.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
+}
+
+.eko-wrapper,
+.styl-wrapper {
   position: sticky;
   top: 0;
   z-index: 1;
+  height: 50vh;
+}
+
+.eko,
+.styl {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+  overflow: hidden;
+  cursor: pointer;
+}
+.eko h2,
+.styl h2 {
+  padding: 10% 10% 2% 10%;
+  margin: 0;
+  font-size: 40px;
+  font-family: forum;
+  font-weight: 400;
+  color: #eeeae4;
+  text-transform: uppercase;
+  text-decoration: overline 1px #c69b34;
+}
+.eko .šipka,
+.styl .šipka {
+  width: 120px;
+  position: relative;
+  left: 65%;
+  bottom: -30%;
+  padding-top: 0;
 }
 
 @media only screen and (min-width: 800px) {
+
+.eko-wrapper,
+  .styl-wrapper {
+    height: 70vh;  /* TOTO CHYBÍ! */
+  }
+
   .eko,
   .styl {
     height: 70vh;
@@ -302,8 +439,18 @@ a.nav-link {
   .styl:hover {
     transform: scale(1.1);
   }
-}
+  .eko h2,
+  .styl h2 {
+    padding: 5% 10% 2% 10%;
+  }
+  .eko .šipka,
+  .styl .šipka {
+    width: 150px;
+    left: 80%;
+    bottom: -35%;
+  }
 
+}
 @media only screen and (max-width: 799px) {
   .logobox,
   .eko,
@@ -340,6 +487,11 @@ a.nav-link {
   color: #eeeae4;
   text-decoration: overline 1px #c69b34;
 }
+.vobox-link {
+  text-decoration: none;
+  display: flex;
+}
+
 .vobox {
   background-color: #243c5a;
   width: 100%;
@@ -602,7 +754,7 @@ label {
     font-weight: 500;
   }*/
   .contact {
-    background-color: #243c5a;
+    background-color: #070c12;
     color: #eeeae4;
   }
 
