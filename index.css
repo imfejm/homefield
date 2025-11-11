@@ -228,7 +228,7 @@ a.nav-link {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 50vh;
+  height: 80vh;
 }
 
 .logobox {
@@ -317,8 +317,6 @@ a.nav-link {
   }
 }
 
-
-
 .odkaz {
   display: flex;
   flex-direction: row;
@@ -333,26 +331,34 @@ a.nav-link {
 }
 
 @media only screen and (min-width: 800px) {
- .logobox {
-    height: 70vh; /* nebo 80vh, 100vh podle potřeby */
-      }
-  
+  .logobox {
+    height: 80vh !important;
+    min-height: 80vh;
+  }
+
   .upperlogobox {
-    z-index: 2; /* Zvýšit z-index, aby se nepřekrývalo */
+    height: 80vh;
+    z-index: 2;
   }
 
   .logobox .front {
-    padding-bottom: 5%; /* Přidej padding, aby .odkaz nebyl úplně dole */
+    height: 100%;
+    min-height: 80vh;
+    justify-content: space-between;
+    padding-bottom: 5%;
   }
-.logo{
+  .logo {
     width: auto;
-    height:60%;  /* Nebo jinou výšku */
+    height: 60%;
     max-width: 80%;
-    padding: 5% 7% 3% 7%;    
+    padding: 5% 7% 1% 7%;
   }
 
   .sipka {
     width: 150px;
+  }
+  .odkaz {
+    padding: 0 10% 3% 10%;
   }
   .odkaz p {
     font-size: 2vw;
@@ -424,10 +430,9 @@ a.nav-link {
 }
 
 @media only screen and (min-width: 800px) {
-
-.eko-wrapper,
+  .eko-wrapper,
   .styl-wrapper {
-    height: 70vh;  /* TOTO CHYBÍ! */
+    height: 70vh; /* TOTO CHYBÍ! */
   }
 
   .eko,
@@ -449,7 +454,6 @@ a.nav-link {
     left: 80%;
     bottom: -35%;
   }
-
 }
 @media only screen and (max-width: 799px) {
   .logobox,
