@@ -228,7 +228,7 @@ a.nav-link {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 80vh;
+  height: 50vh;
 }
 
 .logobox {
@@ -420,13 +420,14 @@ a.nav-link {
   text-transform: uppercase;
   text-decoration: overline 1px #c69b34;
 }
-.eko .šipka,
-.styl .šipka {
+.eko .shipka,
+.styl .shipka {
   width: 120px;
-  position: relative;
-  left: 65%;
-  bottom: -30%;
+  position: absolute;
+  left: 67%;
+  bottom: 0%;
   padding-top: 0;
+  z-index: 99;
 }
 
 @media only screen and (min-width: 800px) {
@@ -448,11 +449,12 @@ a.nav-link {
   .styl h2 {
     padding: 5% 10% 2% 10%;
   }
-  .eko .šipka,
-  .styl .šipka {
+  .eko .shipka,
+  .styl .shipka {
+    position: absolute;
     width: 150px;
-    left: 80%;
-    bottom: -35%;
+    left: 77%;
+    bottom: 5%;
   }
 }
 @media only screen and (max-width: 799px) {
