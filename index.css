@@ -446,11 +446,11 @@ a.nav-link {
   color: #c69b34;
 }
 .eko h3 {
-  border-top: 2px solid #eeeae4;
-  padding-top: 12px;
+  border-top: 1px solid #eeeae4;
+   padding-top: calc(10% + 8px);
 }
 .styl h3 {
-  border-top: 2px solid #eeeae4;
+  border-top: 1px solid #eeeae4;
   padding-top: calc(10% + 8px);
 }
 .eko .shipka,
@@ -472,12 +472,12 @@ a.nav-link {
   color: #c69b34;
 }
 .eko h3 {
-  border-top: 2px solid #eeeae4;
+  border-top: 1px solid #eeeae4;
   padding-top: 12px;
 }
 .styl h3 {
-  border-top: 2px solid #eeeae4;
-  padding-top: calc(10% + 8px);
+  border-top: 1px solid #eeeae4;
+  padding-top: 12px;
 }
 .eko p,
 .styl p {
