@@ -444,7 +444,14 @@ a.nav-link {
   font-family: montserrat;
   font-weight: 300;
   color: #c69b34;
-  text-decoration: overline 1px #eeeae4;
+}
+.eko h3 {
+  border-top: 2px solid #eeeae4;
+  padding-top: 12px;
+}
+.styl h3 {
+  border-top: 2px solid #eeeae4;
+  padding-top: calc(10% + 8px);
 }
 .eko .shipka,
 .styl .shipka {
@@ -463,7 +470,14 @@ a.nav-link {
   font-family: montserrat;
   font-weight: 300;
   color: #c69b34;
-  text-decoration: overline 1px #eeeae4;
+}
+.eko h3 {
+  border-top: 2px solid #eeeae4;
+  padding-top: 12px;
+}
+.styl h3 {
+  border-top: 2px solid #eeeae4;
+  padding-top: calc(10% + 8px);
 }
 .eko p,
 .styl p {
