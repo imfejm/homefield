@@ -368,6 +368,19 @@ a.nav-link {
   }
 }
 
+.back h2 {
+  font-family: Montserrat;
+  font-weight: 300;
+  color: #c69b34;
+}
+.back p {
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #eeeae4;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
 /*překrytí logoboxu obsahem:*/
 .content-wrapper {
   width: 100%;
@@ -423,6 +436,16 @@ a.nav-link {
   text-transform: uppercase;
   text-decoration: overline 1px #c69b34;
 }
+.eko h3,
+.styl h3 {
+  padding: 10% 10% 2% 10%;
+  margin: 0;
+  font-size: 28px;
+  font-family: montserrat;
+  font-weight: 300;
+  color: #c69b34;
+  text-decoration: overline 1px #eeeae4;
+}
 .eko .shipka,
 .styl .shipka {
   width: 120px;
@@ -432,11 +455,27 @@ a.nav-link {
   padding-top: 0;
   z-index: 99;
 }
+.eko h3,
+.styl h3 {
+  padding: 10% 10% 2% 10%;
+  margin: 0;
+  font-size: 15px;
+  font-family: montserrat;
+  font-weight: 300;
+  color: #c69b34;
+  text-decoration: overline 1px #eeeae4;
+}
+.eko p,
+.styl p {
+  font-size: 14px;
+  color: #eeeae4;
+  padding: 0 8% 0 8%;
+}
 
 @media only screen and (min-width: 800px) {
   .eko-wrapper,
   .styl-wrapper {
-    height: 70vh; /* TOTO CHYBÍ! */
+    height: 70vh;
   }
 
   .eko,
@@ -458,6 +497,15 @@ a.nav-link {
     width: 150px;
     left: 77%;
     bottom: 5%;
+  }
+
+  .eko h3,
+  .styl h3 {
+    font-size: 28px;
+  }
+  .eko p,
+  .styl p {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 799px) {
