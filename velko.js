@@ -37,3 +37,24 @@ function onScrollLogoS() {
 window.addEventListener("scroll", onScrollLogoS);
 window.addEventListener("resize", onScrollLogoS);
 onScrollLogoS();
+
+//postupne zobrazovani .offers pri scrollu
+const observerOptions = {
+  threshold: 0.2,
+  rootMargin: "0px 0px -50px 0px"
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add("show");
+      }, index * 150);
+    }
+  });
+}, observerOptions);
+
+const offers = document.querySelectorAll(".offers");
+offers.forEach((offer) => {
+  observer.observe(offer);
+});
