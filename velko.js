@@ -58,3 +58,15 @@ const offers = document.querySelectorAll(".offers");
 offers.forEach((offer) => {
   observer.observe(offer);
 });
+
+//postupne zobrazovani tucneho textu po nacteni
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const strongElements = document.querySelectorAll("strong");
+    strongElements.forEach((strong, index) => {
+      setTimeout(() => {
+        strong.classList.add("bold-visible");
+      }, index * 200);
+    });
+  }, 500);
+});

@@ -250,14 +250,33 @@ a.nav-link {
 .text {
   padding: 0% 10% 5% 10%;
   font-size: 18px;
+  line-height: 1.8;
+}
+
+.text strong {
+  font-weight: 400;
+  transition: font-weight 0.3s ease;
+}
+
+strong {
+  font-weight: 400;
+  transition: font-weight 0.3s ease;
+}
+
+.text strong.bold-visible,
+strong.bold-visible {
+  font-weight: 600;
 }
 
 .nabidka {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+align-content: center;
   padding-bottom: 10%;
+}
+.off1, .off2 {
+ justify-items: center
 }
 .offers {
   background: linear-gradient(135deg, rgb(36, 60, 90), rgba(36, 60, 90, 0.773));
@@ -273,8 +292,9 @@ a.nav-link {
   border: 3px solid #c69b34;
   position: relative;
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+  align-self: center;
 }
 
 .offers.show {
@@ -285,9 +305,16 @@ a.nav-link {
 @media only screen and (min-width: 800px) {
   .nabidka {
     display: grid;
-    grid-template-columns: (2, 1fr);
+    grid-template-columns: 1fr 1.2fr;
     width: 90%;
-    font-size: 16px;
+    align-items: start;
+    gap: 2%;
+  }
+
+  .offers {
+    width: 90%;
+    margin: 2% auto;
+    font-weight: 300;
   }
 }
 
@@ -333,6 +360,12 @@ label {
 }
 .forms button:hover {
   opacity: 0.4;
+}
+
+@media only screen and (min-width: 800px) {
+  .forms {
+    width: 50vw;
+  }
 }
 
 /* Language Switcher Styles */
