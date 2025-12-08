@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "bio": "bio",
+    "contact": "contact",
+    "wholesale": "wholesale",
+    "retail": "retail"
+  },
+  "home": {
+    "moreAboutUs": "more about us",
+    "companyBio": "Homefield is a Czech manufacturer of high-quality caps for corporate brands, events, promo teams, and private labels.",
+    "companyDetails": "Based in Prague, we have always built on a combination of European materials, modern production technology with human precision in every detail, and clean design that works across styles.",
+    "sustainabilityHeading": "sustainability",
+    "sustainabilityIntro": "Sustainability and renewability is one of the main directions Homefield is taking.",
+    "sustainabilityMaterials": "In production, we use the highest possible share of **European raw materials** — from cotton twill to viscose brocade. These materials are renewable, easily accessible, and guarantee stable quality and supply. Within two years, we plan to minimize plastic parts and replace them with recyclable materials.",
+    "sustainabilityTransport": "We prioritize **short transport routes**, minimal waste, and long product lifespan.",
+    "styleHeading": "style",
+    "styleIntro": "Homefield's style is built on clean lines, modern construction, and timeless simplicity.",
+    "styleDetails": "We design each model to work in everyday life and retail presentation — whether it's **corporate merch, an event edition, or a private collection for sale.**",
+    "wholesale": "wholesale",
+    "retail": "retail"
+  },
+  "contact": {
+    "intro": "If you have any questions, please do not hesitate to contact us:",
+    "message": "message:",
+    "name": "Your name:",
+    "email": "Your e-mail:",
+    "phone": "Your phone number:",
+    "send": "send",
+    "followUs": "Find us on other contacts and social networks:",
+    "phoneLabel": "Phone",
+    "emailLabel": "E-mail info homefield.cz",
+    "emailText": "e-mail: info@homefield.cz"
+  },
+  "velko": {
+    "heading": "Wholesale Offer",
+    "intro": "Homefield is a B2B partner for companies, brands, and advertising agencies. We deliver small and large series — quickly, reliably, and with a clearly defined process.",
+    "designText": "Our models are designed to impress even in simple execution. Clean aesthetics give space to your brand, but still maintain Homefield's signature – emphasis on material, symmetry, and well-crafted details.",
+    "resultText": "The result is a style that works across segments and allows you to create a collection that won't get lost — whether its goal is sales, brand awareness, or corporate identity.",
+    "offerHeading": "what we offer:",
+    "offer1": "flexible production and low minimum orders",
+    "offer2": "possibility to prepare samples before production",
+    "offer3": "stable materials from EU",
+    "offer4": "short production times",
+    "offer5": "support with design and technical parameters",
+    "offer6": "production for private labels",
+    "contactIntro": "For a specific service offer, please feel free to contact us using the contact form:"
+  },
+  "footer": {
+    "copyright": "© 2025 Homefield s r.o. All rights reserved.",
+    "createdBy": "created by www.imfejm.cz"
+  }
+}

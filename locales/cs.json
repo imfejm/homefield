@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "bio": "bio",
+    "contact": "kontakt",
+    "wholesale": "velkoobchod",
+    "retail": "maloobchod"
+  },
+  "home": {
+    "moreAboutUs": "více o nás",
+    "companyBio": "Homefield je český výrobce kvalitních kšiltovek pro firemní značky, eventy, promotýmy a privátní label.",
+    "companyDetails": "Sídlíme v Praze a od začátku stavíme na kombinaci evropských materiálů, moderní technologie výroby s lidskou precizností v každém detailu a čistým designem, který funguje napříč styly.",
+    "sustainabilityHeading": "udržitelnost",
+    "sustainabilityIntro": "Udržitelnost a obnovitelnost je jeden z hlavních směrů, kterými se Homefield vydává.",
+    "sustainabilityMaterials": "Při výrobě využíváme co nejvyšší podíl **evropských surovin** — od bavlněného kepru až po viskózový brokát. Tyto materiály jsou obnovitelné, snadno dostupné a zaručují stabilní kvalitu i dodávky. Do dvou let plánujeme minimalizovat plastové části a nahrazovat je recyklovatelnými materiály.",
+    "sustainabilityTransport": "Upřednostňujeme **krátké dopravní trasy**, minimální odpad a dlouhou životnost produktu.",
+    "styleHeading": "styl",
+    "styleIntro": "Styl Homefieldu je postavený na čistých liniích, moderní konstrukci a nadčasové jednoduchosti.",
+    "styleDetails": "Každý model navrhujeme tak, aby fungoval v běžném životě i v retailové prezentaci – bez ohledu na to, zda jde o **firemní merch, eventovou edici nebo privátní kolekci pro prodej.**",
+    "wholesale": "velkoobchod",
+    "retail": "maloobchod"
+  },
+  "contact": {
+    "intro": "V případě jakýchkoliv dotazů nás neváhejte kontaktovat:",
+    "message": "zpráva:",
+    "name": "Vaše jméno:",
+    "email": "Váš e-mail:",
+    "phone": "Vaše telefonní číslo:",
+    "send": "odeslat",
+    "followUs": "Najdete nás na dalších kontaktech a sociálních sítích:",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail info homefield.cz",
+    "emailText": "e-mail: info@homefield.cz"
+  },
+  "velko": {
+    "heading": "Velkoobchodní nabídka",
+    "intro": "Homefield je B2B partner pro firmy, značky a reklamní agentury. Dodáváme malé i velké série — rychle, spolehlivě a s jasně nastaveným procesem.",
+    "designText": "Naše modely jsou navrženy tak, aby zaujaly i v jednoduchém provedení. Čistá estetika dává prostor vaší značce, ale zároveň si drží podpis Homefieldu – důraz na materiál, symetrii a dobře zpracované detaily.",
+    "resultText": "Výsledkem je styl, který funguje napříč segmenty a umožní vám vytvořit kolekci, která se neztratí — ať už je jejím cílem prodej, brand awareness nebo firemní identita.",
+    "offerHeading": "co nabízíme:",
+    "offer1": "flexibilní výrobu a nízké minimální odběry",
+    "offer2": "možnost přípravy vzorků před výrobou",
+    "offer3": "stabilní materiály z EU",
+    "offer4": "krátké výrobní lhůty",
+    "offer5": "podporu při designu a technických parametrech",
+    "offer6": "výrobu pro privátní značky (private label)",
+    "contactIntro": "Pro konkrétní nabídku služeb nás neváhejte oslovit v kontaktním formuláři:"
+  },
+  "footer": {
+    "copyright": "© 2025 Homefield s r.o. Všechna práva vyhrazena.",
+    "createdBy": "vytvořeno www.imfejm.cz"
+  }
+}

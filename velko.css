@@ -282,6 +282,15 @@ a.nav-link {
   transform: translateY(0);
 }
 
+@media only screen and (min-width: 800px) {
+  .nabidka {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
 .objednavka {
   width: 100vw;
   background-color: #070c12;
@@ -324,4 +333,66 @@ label {
 }
 .forms button:hover {
   opacity: 0.4;
+}
+
+/* Language Switcher Styles */
+.lang-switcher {
+  display: inline-flex;
+  gap: 0.3em;
+  margin-left: 1em;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.lang-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #c69b34;
+  padding: 0.3em 0.6em;
+  font-size: 1.8vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.lang-btn:hover {
+  background-color: #c69b34;
+  color: #070c12;
+}
+
+.lang-btn.active {
+  background-color: #c69b34;
+  color: #070c12;
+  font-weight: 600;
+}
+
+/* Mobile Language Switcher */
+.lang-switcher-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 0;
+  border-top: 1px solid #c69b34;
+  margin-top: 1em;
+}
+
+.lang-switcher-mobile .lang-btn {
+  font-size: 1.2rem;
+  padding: 0.5em 1.2em;
+}
+
+/* Hide desktop language switcher on mobile */
+@media only screen and (max-width: 800px) {
+  .menu .lang-switcher {
+    display: none;
+  }
+}
+
+/* Hide mobile language switcher on desktop */
+@media only screen and (min-width: 801px) {
+  .lang-switcher-mobile {
+    display: none;
+  }
 }
