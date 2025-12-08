@@ -263,7 +263,7 @@ a.nav-link {
   background: linear-gradient(135deg, rgb(36, 60, 90), rgba(36, 60, 90, 0.773));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  width: 70%;
+  width: 80%;
   padding: 1%;
   margin: 2%;
   border-radius: 0 0 0 10px;
@@ -295,7 +295,7 @@ a.nav-link {
   align-items: center;
   color: #eeeae4;
   font-style: bold;
-  width: 60vw;
+  width: 80vw;
 }
 .forms p {
   padding: 0 10% 5% 10%;
