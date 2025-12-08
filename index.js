@@ -91,3 +91,14 @@ document.querySelector('.eko').addEventListener('click', function() {
 document.querySelector('.styl').addEventListener('click', function() {
   this.classList.toggle('slided');
 });
+
+// Vrácení zpět na front při scrollu
+let scrollTimeout;
+window.addEventListener('scroll', function() {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(function() {
+    document.querySelector('.logobox')?.classList.remove('slided');
+    document.querySelector('.eko')?.classList.remove('slided');
+    document.querySelector('.styl')?.classList.remove('slided');
+  }, 100);
+});

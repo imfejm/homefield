@@ -22,6 +22,21 @@ body {
   /*overflow-x: hidden;*/
 }
 
+@media only screen and (min-width: 1350px) {
+  body {
+    max-width: 1350px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .line {
+    max-width: 1350px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
+}
+
 .line {
   display: flex;
   flex-direction: row;
