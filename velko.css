@@ -342,21 +342,21 @@ label {
   margin-left: 1em;
   align-items: center;
   vertical-align: middle;
+  padding-bottom: 1%;
 }
 
 .lang-btn {
   background-color: transparent;
   color: white;
   border: 1px solid #c69b34;
-  padding: 0.3em 0.6em;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 3px;
+  margin: 0;
 }
-
 .lang-btn:hover {
   background-color: #c69b34;
   color: #070c12;

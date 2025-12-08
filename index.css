@@ -187,19 +187,20 @@ a.kontakt {
   margin-left: 1em;
   align-items: center;
   vertical-align: middle;
+  padding-bottom: 1%;
 }
 
 .lang-btn {
   background-color: transparent;
   color: white;
   border: 1px solid #c69b34;
-  padding: 0.3em 0.6em;
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 3px;
+  margin: 0;
 }
 
 .lang-btn:hover {
@@ -434,13 +435,23 @@ a.nav-link {
   font-family: Montserrat;
   font-weight: 300;
   color: #c69b34;
+  font-size: 15px;
+  padding: 10% 10% 2% 10%;
+  margin: 0;
+}
+.logobox .back h2,
+.eko .back h2,
+.styl .back h2 {
+  border-top: 1px solid #eeeae4;
+  padding-top: 12px;
 }
 .back p {
   font-family: Montserrat;
   font-weight: 400;
   color: #eeeae4;
-  font-size: 1.2rem;
+  font-size: 14px;
   line-height: 1.5;
+  padding: 0 8% 0 8%;
 }
 
 /*překrytí logoboxu obsahem:*/
@@ -497,23 +508,6 @@ a.nav-link {
   color: #eeeae4;
   text-transform: uppercase;
   text-decoration: overline 1px #c69b34;
-}
-.eko h3,
-.styl h3 {
-  padding: 10% 10% 2% 10%;
-  margin: 0;
-  font-size: 28px;
-  font-family: montserrat;
-  font-weight: 300;
-  color: #c69b34;
-}
-.eko h3 {
-  border-top: 1px solid #eeeae4;
-  padding-top: calc(10% + 8px);
-}
-.styl h3 {
-  border-top: 1px solid #eeeae4;
-  padding-top: calc(10% + 8px);
 }
 .eko .shipka,
 .styl .shipka {
@@ -583,7 +577,15 @@ a.nav-link {
   .styl p {
     font-size: 18px;
   }
+  .back p {
+    font-size: 18px;
+  }
+
+  .back h2 {
+    font-size: 28px;
+  }
 }
+
 @media only screen and (max-width: 799px) {
   .logobox,
   .eko,
