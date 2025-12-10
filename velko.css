@@ -239,13 +239,20 @@ a.nav-link {
 
 .velkohead {
   display: block;
-  padding: 5% 10% 5% 0%;
+  padding: 15% 10% 5% 8%;
   margin: 0;
   font-size: 25px;
   font-family: montserrat;
   font-weight: 500;
   color: #070c12;
   text-decoration: overline 1px #c69b34;
+}
+
+@media only screen and (min-width: 800px) {
+  .velkohead {
+    font-size: 32px;
+    padding: 10% 10% 5% 10%;
+  }
 }
 .text {
   padding: 0% 10% 5% 10%;
@@ -272,11 +279,12 @@ strong.bold-visible {
   width: 100vw;
   display: flex;
   flex-direction: column;
-align-content: center;
+  align-content: center;
   padding-bottom: 10%;
 }
-.off1, .off2 {
- justify-items: center
+.off1,
+.off2 {
+  justify-items: center;
 }
 .offers {
   background: linear-gradient(135deg, rgb(36, 60, 90), rgba(36, 60, 90, 0.773));
@@ -305,10 +313,30 @@ align-content: center;
 @media only screen and (min-width: 800px) {
   .nabidka {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
     align-items: start;
     gap: 2%;
+  }
+
+  .off1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .off2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2;
+    margin: 0;
+    padding: 0;
   }
 
   .offers {
@@ -427,5 +455,23 @@ label {
 @media only screen and (min-width: 801px) {
   .lang-switcher-mobile {
     display: none;
+  }
+}
+
+.footer {
+  padding: 10% 10% 0 10% 0;
+  text-align: center;
+}
+.footer p {
+  background-color: #070c12;
+  color: #eeeae4;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .footer p {
+    width: 100vw;
+    padding: 2% 5% 0 5%;
   }
 }

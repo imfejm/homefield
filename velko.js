@@ -45,19 +45,25 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !entry.target.classList.contains("show")) {
+      const delay = parseInt(entry.target.dataset.offerIndex) * 150;
       setTimeout(() => {
         entry.target.classList.add("show");
-      }, index * 150);
+      }, delay);
+      observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-const offers = document.querySelectorAll(".offers");
-offers.forEach((offer) => {
-  observer.observe(offer);
-});
+// Inicializace s krátkou prodlevou
+setTimeout(() => {
+  const offers = document.querySelectorAll(".offers");
+  offers.forEach((offer, index) => {
+    offer.dataset.offerIndex = index;
+    observer.observe(offer);
+  });
+}, 100);
 
 //postupne zobrazovani tucneho textu po nacteni
 window.addEventListener("load", () => {
