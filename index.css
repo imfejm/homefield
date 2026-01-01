@@ -871,6 +871,80 @@ label {
   }
 }
 
+/* Fix styles for viewports 1350px and above */
+@media only screen and (min-width: 1350px) {
+  body {
+    overflow-x: clip;
+    font-size: 20px;
+  }
+
+  .line {
+    overflow: visible;
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 60px;
+  }
+
+  .menu a {
+    font-size: 24.3px;
+    margin: 13.5px;
+  }
+
+  .lang-btn {
+    font-size: 21.6px;
+  }
+
+  .stop {
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 60px;
+  }
+
+  .upperlogobox {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .logobox {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .eko-wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .styl-wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .shops {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .footer p {
+    font-size: 18px;
+  }
+}
+
 @media (prefers-color-scheme: dark) and (max-width: 800px) {
   body {
     background-color: #070c12;
