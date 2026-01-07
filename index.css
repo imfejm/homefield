@@ -466,8 +466,9 @@ a.nav-link {
 .eko {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/ksiltvellep.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .styl {
@@ -475,6 +476,7 @@ a.nav-link {
     url("img/styleksilt.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .eko-wrapper,
@@ -552,6 +554,7 @@ a.nav-link {
   .styl {
     height: 70vh;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: contain;
   }
   .eko:hover,
   .styl:hover {
@@ -656,9 +659,11 @@ a.nav-link {
   justify-content: center;
   width: 100%;
   height: 40vh;
-  background-image: url(img/banner.jpg);
+  background-image: linear-gradient(rgba(16, 15, 15, 0.344), rgba(14, 13, 13, 0.1)), url(img/banner.jpg);
   background-size: cover;
   background-position: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .mobox:hover {
@@ -896,7 +901,6 @@ label {
 /* Fix styles for viewports 1350px and above */
 @media only screen and (min-width: 1350px) {
   body {
-    overflow-x: clip;
     font-size: 20px;
   }
 
@@ -925,10 +929,15 @@ label {
   .upperlogobox {
     max-width: 1350px;
     margin: 0 auto;
+    height: 80vh;
   }
 
   .logobox {
-    max-width: 1350px;
+    width: 1350px;
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    background-color: #070c12;
     margin: 0 auto;
   }
 
@@ -940,16 +949,37 @@ label {
   .eko-wrapper {
     max-width: 1350px;
     margin: 0 auto;
+    max-height:max-content;
+  }
+
+  .eko {
+    background-repeat: no-repeat;
+    width: 100%;
   }
 
   .styl-wrapper {
     max-width: 1350px;
     margin: 0 auto;
+    max-height:max-content;
+  }
+
+  .styl {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
   }
 
   .shops {
     max-width: 1350px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+  }
+
+  .vobox, .mobox {
+    width: 675px;
+    height: 40vh;
   }
 
   .contact {
@@ -967,7 +997,7 @@ label {
   }
 }
 
-@media (prefers-color-scheme: dark) and (max-width: 800px) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #070c12;
     color: #eeeae4;
