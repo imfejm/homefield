@@ -415,7 +415,7 @@ strong.bold-visible {
   width: 80vw;
 }
 .forms p {
-  padding: 0 10% 5% 10%;
+  padding: 2rem 10% 5% 10%;
 }
 .forms input,
 textarea {
@@ -428,6 +428,7 @@ textarea {
 }
 label {
   padding: 1% 0 1% 0;
+  text-align: center;
 }
 .forms button {
   background-color: #c69b34;
@@ -441,6 +442,12 @@ label {
 }
 .forms button:hover {
   opacity: 0.4;
+}
+.formRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -468,6 +475,7 @@ label {
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 2rem;
   }
 
@@ -552,7 +560,7 @@ label {
 }
 
 .footer {
-  width:100%;
+  width: 100%;
   padding: 10% 10% 0 10% 0;
   text-align: center;
 }
@@ -562,6 +570,7 @@ label {
   margin: 0;
   padding: 5%;
   text-align: center;
+  font-size: 10px;
 }
 @media only screen and (min-width: 800px) {
   .footer p {
