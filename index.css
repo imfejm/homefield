@@ -371,7 +371,7 @@ a.nav-link {
 .logo {
   width: 100vw;
   height: 50%;
-  padding: 7% 7% 3% 7%;
+  padding: 20% 7% 3% 7%;
   opacity: 0;
   animation: fadeIn 4s ease-in-out forwards;
   align-self: center;
@@ -417,7 +417,7 @@ a.nav-link {
     width: auto;
     height: 60%;
     max-width: 80%;
-    padding: 8% 7% 1% 7%;
+    padding: 10% 7% 1% 7%;
   }
 
   .sipka {
@@ -550,13 +550,13 @@ a.nav-link {
   .styl-wrapper {
     height: 70vh;
   }
-.eko{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("img/ksilt1350.jpg");
-}
+  .eko {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("img/ksilt1350.jpg");
+  }
   .eko,
   .styl {
-       transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-size: cover;
   }
   .eko:hover,
