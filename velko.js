@@ -41,7 +41,7 @@ onScrollLogoS();
 //postupne zobrazovani .offers pri scrollu
 const observerOptions = {
   threshold: 0.2,
-  rootMargin: "0px 0px -50px 0px"
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -75,4 +75,45 @@ window.addEventListener("load", () => {
       }, index * 200);
     });
   }, 500);
+});
+
+//kontaktni formular
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof emailjs === "undefined") {
+    console.error("EmailJS knihovna není načtena.");
+    return;
+  }
+
+  // Inicializace EmailJS
+  emailjs.init("H50U77t2-paG6bflo");
+
+  const form = document.getElementById("contact-form");
+
+  if (!form) {
+    console.error("Formulář #contact-form nebyl nalezen.");
+    return;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Honeypot ochrana — pokud je vyplněný, nic neodesílat
+    const honeypot = form.querySelector('input[name="honeypot"]');
+    if (honeypot && honeypot.value.trim() !== "") {
+      console.warn("Honeypot vyplněn — odeslání zablokováno.");
+      return;
+    }
+
+    emailjs
+      .sendForm("forpsi_smtp", "template_zsbdrgu", form)
+      .then(function () {
+        alert("Zpráva byla úspěšně odeslána.");
+        form.reset();
+      })
+      .catch(function (error) {
+        alert("Při odesílání došlo k chybě.");
+        console.error("EmailJS error:", error);
+      });
+  });
 });
