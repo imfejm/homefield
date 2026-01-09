@@ -56,55 +56,60 @@ function onScrollLogobox() {
   //   logobox.style.opacity = opacity.toString();
   // }
   //}
-
-
 }
-
 
 window.addEventListener("scroll", onScrollLogobox);
 onScrollLogobox();
 
 //animace pri scrollu - MUSÍ BÝT AŽ PO NAČTENÍ DOM
-document.addEventListener('DOMContentLoaded', () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.7 });
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.7 }
+  );
 
-  document.querySelectorAll('.logobox, .eko, .styl, .shops').forEach(el => {
+  document.querySelectorAll(".logobox, .eko, .styl, .shops").forEach((el) => {
     observer.observe(el);
   });
 });
 
 // Posunutí při kliknutí
-document.querySelector('.logobox').addEventListener('click', function() {
-  this.classList.toggle('slided');
+document.querySelector(".logobox").addEventListener("click", function () {
+  this.classList.toggle("slided");
 });
 
-document.querySelector('.eko').addEventListener('click', function() {
-  this.classList.toggle('slided');
+document.querySelector(".eko").addEventListener("click", function () {
+  this.classList.toggle("slided");
 });
 
-document.querySelector('.styl').addEventListener('click', function() {
-  this.classList.toggle('slided');
+document.querySelector(".styl").addEventListener("click", function () {
+  this.classList.toggle("slided");
 });
 
 // Vrácení zpět na front při scrollu
 let scrollTimeout;
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(function() {
-    document.querySelector('.logobox')?.classList.remove('slided');
-    document.querySelector('.eko')?.classList.remove('slided');
-    document.querySelector('.styl')?.classList.remove('slided');
+  scrollTimeout = setTimeout(function () {
+    document.querySelector(".logobox")?.classList.remove("slided");
+    document.querySelector(".eko")?.classList.remove("slided");
+    document.querySelector(".styl")?.classList.remove("slided");
   }, 100);
 });
 
 //kontaktni formular
+
 document.addEventListener("DOMContentLoaded", function () {
+  if (typeof emailjs === "undefined") {
+    console.error("EmailJS knihovna není načtena.");
+    return;
+  }
 
   // Inicializace EmailJS
   emailjs.init("H50U77t2-paG6bflo");
@@ -126,15 +131,15 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    emailjs.sendForm("forpsi_smtp", "template_uar23bq", form)
+    emailjs
+      .sendForm("forpsi_smtp", "template_uar23bq", form)
       .then(function () {
         alert("Zpráva byla úspěšně odeslána.");
         form.reset();
       })
       .catch(function (error) {
-        alert("Při odesílání došlo k chybě.")
+        alert("Při odesílání došlo k chybě.");
         console.error("EmailJS error:", error);
       });
   });
-
 });
