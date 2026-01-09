@@ -265,7 +265,6 @@ strong.bold-visible {
   font-weight: 600;
 }
 .nabizime {
-  
   padding: 5% 10% 5% 10%;
 }
 
@@ -589,5 +588,21 @@ label {
   .forms {
     width: 1080px;
     max-width: 1080px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #070c12;
+    color: #eeeae4;
+  }
+  .velkohead {
+    color: #eeeae4;
+  }
+  .objednavka {
+    background-color: #070c12;
+  }
+  .forms {
+    color: #c69b34;
   }
 }
