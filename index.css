@@ -337,7 +337,12 @@ a.nav-link {
   transition: transform 0.6s ease;
 }
 
-.logobox .front,
+.logobox .front {
+  left: 0;
+  transform: translateX(0);
+  justify-content: center;
+}
+
 .eko .front,
 .styl .front {
   left: 0;
@@ -390,6 +395,10 @@ a.nav-link {
   text-align: right;
   padding: 0 7% 0 7%;
   justify-content: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .sipka {
@@ -656,7 +665,6 @@ a.nav-link {
   color: #eeeae4;
 }
 .mobox h2 {
-  
   text-decoration: overline 1px #1a2d44;
 }
 .mobox {
@@ -870,6 +878,10 @@ label {
   padding-top: 3rem;
 }
 
+.soc[hidden] {
+  display: none !important;
+}
+
 .soc a {
   display: inline-block;
   transition: transform 0.2s ease;
@@ -919,6 +931,8 @@ label {
     max-width: 1350px;
     margin: 0 auto;
     height: 60px;
+    left: 0;
+    right: 0;
   }
 
   .menu a {
@@ -999,12 +1013,17 @@ label {
   }
 
   .footer {
+    padding-top: 3rem;
+    text-align: center;
     max-width: 1350px;
     margin: 0 auto;
   }
 
   .footer p {
-    font-size: 18px;
+    padding: 1rem;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
   }
 }
 
