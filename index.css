@@ -324,7 +324,6 @@ a.nav-link {
 .logobox .front,
 .logobox .back,
 .eko .front,
-
 .eko .back,
 .styl .front,
 .styl .back {
@@ -487,6 +486,7 @@ a.nav-link {
   border-top: 1px solid #eeeae4;
   padding-top: 12px;
 }
+
 .back p {
   font-family: Montserrat;
   font-weight: 400;
@@ -505,13 +505,13 @@ a.nav-link {
 }
 /*-*/
 
-.eko {
+/*.eko {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/ksilt800x350PS.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
+}*/
 
 .hero-image {
   width: 100%;
@@ -672,6 +672,12 @@ a.nav-link {
     transform: scale(1);
     opacity: 1;
   }
+
+  .eko .back,
+  .styl .back {
+    justify-content: flex-start;
+    padding-top: 10%;
+  }
 }
 
 .shops {
@@ -817,11 +823,10 @@ a.nav-link {
 .contact {
   grid-area: contact;
   background-color: #070c12;
- position: sticky;
+  position: sticky;
   top: 0;
   z-index: 4;
 }
-
 
 .facebook,
 .instagram {
@@ -975,7 +980,7 @@ label {
   padding: 5%;
   text-align: center;
   font-size: 10px;
-  z-index:15;
+  z-index: 15;
 }
 
 .footer a {
@@ -983,7 +988,7 @@ label {
   text-decoration: underline;
   cursor: pointer;
   pointer-events: auto;
-  z-index:15;
+  z-index: 15;
 }
 
 .footer a:hover {
@@ -1088,7 +1093,6 @@ label {
     margin: 0 auto;
   }
 
-
   .footer {
     padding-top: 3rem;
     text-align: center;
@@ -1154,7 +1158,6 @@ label {
   }
 }
 
-
 .address {
   pointer-events: none;
 }
@@ -1162,4 +1165,3 @@ label {
 .address * {
   pointer-events: auto;
 }
-
