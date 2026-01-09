@@ -1074,6 +1074,11 @@ label {
     width: 100%;
   }
 
+  .styl .hero-image {
+    object-position: 54% 50%;
+    
+  }
+
   .shops {
     max-width: 1350px;
     margin: 0 auto;
