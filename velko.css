@@ -22,74 +22,6 @@ body {
   /*overflow-x: hidden;*/
 }
 
-/* Fix styles for viewports 1350px and above */
-@media only screen and (min-width: 1350px) {
-  body {
-    overflow-x: clip;
-    font-size: 20px;
-    max-width: 1350px;
-    margin: 0 auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .line {
-    overflow: visible;
-    max-width: 1350px;
-    margin: 0 auto;
-    height: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    right: auto;
-  }
-
-  .menu a {
-    font-size: 24.3px;
-    margin: 13.5px;
-  }
-
-  .lang-btn {
-    font-size: 21.6px;
-  }
-
-  .stop {
-    max-width: 1350px;
-    margin: 0 auto;
-    height: 60px;
-  }
-
-  .text {
-    font-size: 20px;
-  }
-
-  .velkohead {
-    font-size: 36px;
-  }
-
-  .nabidka {
-    max-width: 1350px;
-    margin: 0 auto;
-  }
-
-  .objednavka {
-    max-width: 1350px;
-    margin: 0 auto;
-  }
-
-  .footer {
-    max-width: 1350px;
-    margin: 0 auto;
-  }
-
-  .footer p {
-    font-size: 18px;
-  }
-
-  .forms {
-    width: 1080px;
-    max-width: 1080px;
-  }
-}
-
 .line {
   display: flex;
   flex-direction: row;
@@ -132,13 +64,16 @@ body {
   position: absolute;
   right: 18px;
   top: 5px;
+
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .menu a {
   color: white;
   text-decoration: none;
   font-size: 2vw;
-  font-family: "quicksand", serif;
+  font-family: forum, serif;
   font-weight: 300;
   border-left: solid 1px #c69b34;
   padding-left: 0.3em;
@@ -223,7 +158,8 @@ a.kontakt {
   position: absolute;
   left: 32px; /* stejná vzdálenost jako má .ham od pravého okraje */
   top: 7.5px; /* vycentrované vertikálně */
-
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -308,9 +244,10 @@ a.nav-link {
   }
 }
 .text {
-  padding: 0% 10% 5% 10%;
+  padding: 0% 12% 5% 12%;
   font-size: 18px;
   line-height: 1.8;
+  margin: 0 auto;
 }
 
 .text strong {
@@ -326,6 +263,10 @@ strong {
 .text strong.bold-visible,
 strong.bold-visible {
   font-weight: 600;
+}
+.nabizime {
+  
+  padding: 5% 10% 5% 10%;
 }
 
 .nabidka {
@@ -449,6 +390,19 @@ label {
   align-items: center;
   width: 100%;
 }
+.footer {
+  width: 100%;
+  padding: 10% 10% 0 10%;
+  text-align: center;
+}
+.footer p {
+  background-color: #070c12;
+  color: #eeeae4;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 10px;
+}
 
 @media only screen and (min-width: 800px) {
   .forms {
@@ -476,7 +430,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 
   .formRight label {
@@ -494,6 +448,15 @@ label {
   .formRight button {
     align-self: center;
     margin-top: 1.5rem;
+  }
+  @media only screen and (min-width: 800px) {
+    .footer {
+      padding: 0;
+    }
+    .footer p {
+      width: 100%;
+      padding: 2% 5% 2% 5%;
+    }
   }
 }
 
@@ -559,25 +522,72 @@ label {
   }
 }
 
-.footer {
-  width: 100%;
-  padding: 10% 10% 0 10% 0;
-  text-align: center;
-}
-.footer p {
-  background-color: #070c12;
-  color: #eeeae4;
-  margin: 0;
-  padding: 5%;
-  text-align: center;
-  font-size: 10px;
-}
-@media only screen and (min-width: 800px) {
-  .footer p {
-    width: 100vw;
-    padding: 2% 5% 0 5%;
+/* Fix styles for viewports 1350px and above */
+@media only screen and (min-width: 1350px) {
+  body {
+    font-size: 20px;
   }
-}
-.footer{
-  padding-bottom: 3rem;
+
+  .line {
+    overflow: visible;
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  .menu a {
+    font-size: 24.3px;
+    margin: 13.5px;
+  }
+
+  .lang-btn {
+    font-size: 21.6px;
+  }
+
+  .stop {
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 60px;
+  }
+
+  .text {
+    font-size: 20px;
+    width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .velkohead {
+    font-size: 36px;
+  }
+
+  .nabidka {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .objednavka {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .footer {
+    text-align: center;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .footer p {
+    padding: 1rem;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+  }
+  .forms {
+    width: 1080px;
+    max-width: 1080px;
+  }
 }
