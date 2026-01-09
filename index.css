@@ -919,6 +919,17 @@ label {
   text-align: center;
   font-size: 10px;
 }
+
+.footer a {
+  color: #eeeae4;
+  text-decoration: underline;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
 @media only screen and (min-width: 800px) {
   .footer p {
     width: 100vw;
