@@ -324,6 +324,7 @@ a.nav-link {
 .logobox .front,
 .logobox .back,
 .eko .front,
+
 .eko .back,
 .styl .front,
 .styl .back {
@@ -348,6 +349,36 @@ a.nav-link {
   left: 0;
   transform: translateX(0);
   justify-content: space-between;
+}
+
+.styl .front {
+  height: 50vh;
+}
+
+.styl .front::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.eko .front {
+  height: 50vh;
+}
+
+.eko .front::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 
 .logobox.slided .front,
@@ -482,12 +513,10 @@ a.nav-link {
   background-repeat: no-repeat;
 }
 
-.styl {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("img/styleksilt.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero-image {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
 }
 
 .eko-wrapper,
@@ -495,7 +524,7 @@ a.nav-link {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 70vh;
+  height: 50vh;
 }
 
 .eko,
@@ -523,14 +552,30 @@ a.nav-link {
   text-transform: uppercase;
   text-decoration: overline 1px #c69b34;
 }
+
+.styl h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.eko h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
 .eko .shipka,
 .styl .shipka {
   width: 120px;
   position: absolute;
-  left: 67%;
+  left: 70%;
   bottom: 0%;
   padding-top: 0;
-  z-index: 99;
+  z-index: 10;
 }
 .eko h3,
 .styl h3 {
@@ -559,6 +604,13 @@ a.nav-link {
 @media only screen and (min-width: 800px) {
   .eko-wrapper,
   .styl-wrapper {
+    height: 70vh;
+  }
+  .eko .front,
+  .styl .front {
+    height: 70vh;
+  }
+  .hero-image {
     height: 70vh;
   }
   .eko {
@@ -699,7 +751,7 @@ a.nav-link {
   }
   .vobox,
   .mobox {
-    height: 70vh;
+    height: 50vh;
     width: 50vw;
   }
   .vobox h4,
