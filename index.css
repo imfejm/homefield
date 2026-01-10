@@ -1135,6 +1135,9 @@ label {
   .logobox {
     background-color: #243c5a97;
   }
+  .stop{
+    background-color: #070c12;
+  }
   .content-wrapper {
     background-color: #070c12;
     color: #eeeae4;
