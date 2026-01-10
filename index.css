@@ -965,6 +965,7 @@ label {
   padding-top: 3rem;
 }
 .footer {
+  width: 100%;
   padding: 10% 10% 0 10% 0;
   text-align: center;
   font-size: 14px;
@@ -1005,6 +1006,7 @@ label {
 @media only screen and (min-width: 1350px) {
   body {
     font-size: 20px;
+    background-color: #e2e0e0;
   }
 
   .line {
@@ -1029,6 +1031,7 @@ label {
     max-width: 1350px;
     margin: 0 auto;
     height: 60px;
+    background-color: #e2e0e0;
   }
 
   .upperlogobox {
@@ -1076,7 +1079,6 @@ label {
 
   .styl .hero-image {
     object-position: 54% 50%;
-    
   }
 
   .shops {
