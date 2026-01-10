@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="velko.css" />
-     <link rel="icon" href="/img/favicon/favicon.ico" />
+    <link rel="icon" href="/img/favicon/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
@@ -36,7 +36,9 @@
       <h1>
         <span class="visually-hidden">Homefield</span>
       </h1>
-      <img src="img/logoS.svg" alt="logo Homefield small" class="logoS" />
+      <a href="index.html#bio">
+        <img src="img/logoS.svg" alt="logo Homefield small" class="logoS" />
+      </a>
       <div class="menu">
         <a href="index.html#bio" class="bio" data-key="nav.bio">bio</a>
         <a href="index.html#kontakt" class="kontakt" data-key="nav.contact"
@@ -173,6 +175,16 @@
       </p>
       <p data-key="footer.createdBy">vytvořeno www.imfejm.cz</p>
     </div>
+
+    <!-- Pop-up okno -->
+    <div id="eshop-popup" class="popup-overlay hidden">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <img src="img/soon.png" alt="Coming Soon" class="popup-icon" />
+        <p data-key="popup.comingSoon">e-shop bude brzy spuštěn</p>
+      </div>
+    </div>
+
     <script src="i18n.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="velko.js" defer></script>

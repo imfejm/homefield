@@ -11,8 +11,7 @@
     "companyDetails": "Sídlíme v Praze a od začátku stavíme na kombinaci evropských materiálů, moderní technologie výroby s lidskou precizností v každém detailu a čistým designem, který funguje napříč styly.",
     "sustainabilityHeading": "udržitelnost",
     "sustainabilityIntro": "Udržitelnost a obnovitelnost je jeden z hlavních směrů, kterými se Homefield vydává.",
-    "sustainabilityMaterials": "Při výrobě využíváme co nejvyšší podíl **evropských surovin** — od bavlněného kepru až po viskózový brokát. Tyto materiály jsou obnovitelné, snadno dostupné a zaručují stabilní kvalitu i dodávky. Do dvou let plánujeme minimalizovat plastové části a nahrazovat je recyklovatelnými materiály.",
-    "sustainabilityTransport": "Upřednostňujeme **krátké dopravní trasy**, minimální odpad a dlouhou životnost produktu.",
+    "sustainabilityMaterials": "Při výrobě využíváme co nejvyšší podíl **evropských surovin** — od bavlněného kepru až po viskózový brokát. Tyto materiály jsou obnovitelné, snadno dostupné a zaručují stabilní kvalitu i dodávky. Již dnes využíváme recyklované materiály a jejich podíl ve výrobě průběžně navyšujeme. Upřednostňujeme **krátké dopravní trasy**, minimální odpad a dlouhou životnost produktu.",
     "styleHeading": "styl",
     "styleIntro": "Styl Homefieldu je postavený na čistých liniích, moderní konstrukci a nadčasové jednoduchosti.",
     "styleDetails": "Každý model navrhujeme tak, aby fungoval v běžném životě i v retailové prezentaci – bez ohledu na to, zda jde o **firemní merch, eventovou edici nebo privátní kolekci pro prodej.**",
@@ -52,5 +51,8 @@
   "footer": {
     "copyright": "© 2025 Homefield s r.o. Všechna práva vyhrazena.",
     "createdBy": "vytvořeno www.imfejm.cz"
+  },
+  "popup": {
+    "comingSoon": "e-shop bude brzy spuštěn"
   }
 }

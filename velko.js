@@ -117,3 +117,34 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+// Pop-up pro maloobchod odkazy
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("eshop-popup");
+  const closeBtn = document.querySelector(".popup-close");
+  const maloobchodLinks = document.querySelectorAll(".maloobchod, a[href='index.html#maloobchod']");
+
+  if (popup) {
+    // Otevření pop-upu po kliknutí na odkazy "maloobchod"
+    maloobchodLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        popup.classList.remove("hidden");
+      });
+    });
+
+    // Zavření pop-upu po kliknutí na křížek
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        popup.classList.add("hidden");
+      });
+    }
+
+    // Zavření pop-upu po kliknutí mimo obsah
+    popup.addEventListener("click", function (e) {
+      if (e.target === popup) {
+        popup.classList.add("hidden");
+      }
+    });
+  }
+});

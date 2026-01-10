@@ -366,6 +366,10 @@ textarea {
   border-radius: 0 0 0 10px;
   border-color: #243c5a;
 }
+
+textarea {
+  height: auto;
+}
 label {
   padding: 1% 0 1% 0;
   text-align: center;
@@ -521,6 +525,71 @@ label {
   }
 }
 
+/* Pop-up okno */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 12, 18, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.popup-overlay.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.popup-content {
+  background-color: #eeeae4;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #243c5a;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.popup-close:hover {
+  color: #c69b34;
+}
+
+.popup-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
+}
+
+.popup-content p {
+  font-size: 20px;
+  color: #243c5a;
+  font-family: montserrat;
+  font-weight: 500;
+  margin: 0;
+}
+
 /* Fix styles for viewports 1350px and above */
 @media only screen and (min-width: 1350px) {
   body {
@@ -603,6 +672,27 @@ label {
     background-color: #070c12;
   }
   .forms {
+    color: #c69b34;
+  }
+  .forms input,
+  textarea {
+    background-color: #eeeae4;
+  }
+
+  .popup-content {
+    background-color: #070c12;
+    color: #eeeae4;
+  }
+
+  .popup-content p {
+    color: #eeeae4;
+  }
+
+  .popup-close {
+    color: #eeeae4;
+  }
+
+  .popup-close:hover {
     color: #c69b34;
   }
 }

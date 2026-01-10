@@ -11,8 +11,7 @@
     "companyDetails": "Based in Prague, we have always built on a combination of European materials, modern production technology with human precision in every detail, and clean design that works across styles.",
     "sustainabilityHeading": "sustainability",
     "sustainabilityIntro": "Sustainability and renewability is one of the main directions Homefield is taking.",
-    "sustainabilityMaterials": "In production, we use the highest possible share of **European raw materials** — from cotton twill to viscose brocade. These materials are renewable, easily accessible, and guarantee stable quality and supply. Within two years, we plan to minimize plastic parts and replace them with recyclable materials.",
-    "sustainabilityTransport": "We prioritize **short transport routes**, minimal waste, and long product lifespan.",
+    "sustainabilityMaterials": "In production, we use the highest possible share of **European raw materials** — from cotton twill to viscose brocade. These materials are renewable, easily accessible, and guarantee stable quality and supply. We already use recycled materials today and are continuously increasing their share in production. We prioritize **short transport routes**, minimal waste, and long product lifespan.",
     "styleHeading": "style",
     "styleIntro": "Homefield's style is built on clean lines, modern construction, and timeless simplicity.",
     "styleDetails": "We design each model to work in everyday life and retail presentation — whether it's **corporate merch, an event edition, or a private collection for sale.**",
@@ -52,5 +51,8 @@
   "footer": {
     "copyright": "© 2025 Homefield s r.o. All rights reserved.",
     "createdBy": "created by www.imfejm.cz"
+  },
+  "popup": {
+    "comingSoon": "e-shop coming soon"
   }
 }

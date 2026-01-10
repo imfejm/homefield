@@ -42,7 +42,9 @@
       <h1>
         <span class="visually-hidden">Homefield</span>
       </h1>
-      <img src="img/logoS.svg" alt="logo Homefield small" class="logoS" />
+      <a href="#bio">
+        <img src="img/logoS.svg" alt="logo Homefield small" class="logoS" />
+      </a>
       <div class="menu">
         <a href="#bio" class="bio" data-key="nav.bio">bio</a>
         <a href="#kontakt" class="kontakt" data-key="nav.contact">kontakt</a>
@@ -150,9 +152,7 @@
               Při výrobě využíváme co nejvyšší podíl
               <strong>evropských surovin</strong> — od bavlněného kepru až po
               viskózový brokát. Tyto materiály jsou obnovitelné, snadno dostupné
-              a zaručují stabilní kvalitu i dodávky. Do dvou let plánujeme
-              minimalizovat plastové části a nahrazovat je recyklovatelnými
-              materiály. Upřednostňujeme <strong>krátké dopravní trasy</strong>,
+              a zaručují stabilní kvalitu i dodávky. Již dnes využíváme recyklované materiály a jejich podíl ve výrobě průběžně navyšujeme. Upřednostňujeme <strong>krátké dopravní trasy</strong>,
               minimální odpad a dlouhou životnost produktu.
             </p>
           </div>
@@ -207,11 +207,8 @@
         </a>
         <div class="mobox">
           <h2 data-key="home.retail">maloobchod</h2>
-          <div class="banner">
-            <a href="tvuj-odkaz.html" class="banner-link"> </a>
-            <h4 data-key="home.retailSubtitle">Signature kolekce</h4>
-            <p data-key="home.retailLink">navštivte e-shop</p>
-          </div>
+          <h4 data-key="home.retailSubtitle">Signature kolekce</h4>
+          <p data-key="home.retailLink">navštivte e-shop</p>
         </div>
       </div>
 
@@ -313,6 +310,15 @@
           >www.imfejm.cz</a
         >
       </p>
+    </div>
+
+    <!-- Pop-up okno -->
+    <div id="eshop-popup" class="popup-overlay hidden">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <img src="img/soon.png" alt="Coming Soon" class="popup-icon" />
+        <p data-key="popup.comingSoon">e-shop bude brzy spuštěn</p>
+      </div>
     </div>
 
     <script src="i18n.js" defer></script>
