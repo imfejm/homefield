@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     emailjs
-      .sendForm("forpsi_smtp", "template_zsbdrgu", form)
+      .sendForm("forpsi_smtp", "template_uar23bq", form)
       .then(function () {
         alert("Zpráva byla úspěšně odeslána.");
         form.reset();
@@ -122,7 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("eshop-popup");
   const closeBtn = document.querySelector(".popup-close");
-  const maloobchodLinks = document.querySelectorAll(".maloobchod, a[href='index.html#maloobchod']");
+  const maloobchodLinks = document.querySelectorAll(
+    ".maloobchod, a[href='index.html#maloobchod']"
+  );
 
   if (popup) {
     // Otevření pop-upu po kliknutí na odkazy "maloobchod"
